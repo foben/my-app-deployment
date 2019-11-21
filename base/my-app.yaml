@@ -9,9 +9,9 @@ spec:
     - name: main
       image: gitopsworkshop/my-app:v1
       imagePullPolicy: IfNotPresent
-      #      envFrom:
-      #        - secretRef:
-      #            name: foben-app-secret
+      envFrom:
+        - secretRef:
+            name: foben-app-secret
 ---
 apiVersion: v1
 kind: Service
