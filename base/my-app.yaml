@@ -22,4 +22,20 @@ spec:
     port: 8080
   selector:
     username: foben
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: app-secret
+  namespace: platform-edge
+spec:
+  encryptedData:
+    FOBEN_SECRET: AgDCdKutuRUdsbd5XxdswEPxGGgnVF0r5brbKj4cIWCc/ksvyMapJjXbxCrph8NM6XcIBfuy0vJBjqyXgTnMNo/p9406jzpUVSQi1FQy82RTR+zIt7+TQJjHmI+SREsakKOV9eeAq9LlW8y1Yuv6EJvoCaHVekH+6er58H+dvqumVSpxBQJpv2V7+8D+mXXbc6ml9lBeIQHKTTrlcsRqDaoOftuDsFLlj1DqupDmGs5UnRu+M6dY9q/pM76q5BQc6graoEULDbUvF1qSZYQSK9kXLEqodbCsuxTey0s6qJfjd8p3IKMGKm0FMr3naFGi3a/tqc+rM2ts/yqlhajg7LVsFwTQ/HHYSYieO40O2MaMXEbdjNI+LyF9Z3Y/AYU0B/dFO9w5LTBFg5fS0BGHzk2BVtZaf/p7DQr0i8hN9KJwwUbQIxDBd0wx5mPHNGNQV1FQ0ZtuxHwdpUSm5fdqg7lTLWJXylfPSJH7rGEahrnkzynPgyJ8E5Mw0ke9GEiaBP/GMW93eYWApf+M74EZWK/wozIe0blw4okoVzc/m/DtVe4/PA12N45UUWZ9pyHkNWemrbnc0hAaduwsFqZkBASUU3E+Of92GfbVs/7xp1nrY8h3/zXSAqJ0Bs/vcwMzKfNaGosXabTDW7AmXAx8D9ivoudoixJwFVNGHddT/aRwAZgLn9k5st6p3y+BJoYk1mxqb4jY3SY=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: app-secret
+      namespace: platform-edge
+status: {}
 
